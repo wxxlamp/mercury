@@ -253,3 +253,5 @@ coverage/
 **/AGENTS.override.md
 **/.codex/
 **/.agents/
+
+/reference/
