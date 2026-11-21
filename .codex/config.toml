@@ -1,0 +1,13 @@
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+developer_instructions = """
+公共工程任务使用当前仓库根目录，单片制作使用作者指定的项目目录。
+本片下载的素材与参考放在该片目录。
+"""
+
+[sandbox_workspace_write]
+network_access = true
+
+[[skills.config]]
+name = "wangxingxing-text-to-video"
+enabled = false

@@ -254,4 +254,7 @@ coverage/
 **/.codex/
 **/.agents/
 
+# Track this repository's Codex configuration.
+!/.codex/
+
 /reference/
