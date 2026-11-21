@@ -1,6 +1,6 @@
 # 恢复与交接
 
-在 Mercury 的 `project.json` 中，`stage` 从 `manuscript` 开始，按实际进展更新为 `storyboard`、`voice`、`review`、`delivered`。`files` 记录原稿、采用稿、分镜、旁白、字幕、预演和成片的本片相对路径。`approvals.manuscript`、`approvals.storyboard`、`approvals.preview` 对应三次作者审阅；尚待确认或需要重审时为 null。确认记录示例为 `{"file":"review/v2.mp4","version":"v2","note":"作者同意按这版导出"}`。更新素材或时间线时另存版本，让原确认仍能对应到原文件。
+恢复时读本片 `project.json` 的 stage、files、candidates、approvals 及 reviewHistory，再打开本轮稿件或预演。按[交审、返修与导出](../../../../src/film-review.md)处理三个审阅节点。时间线、镜头、素材、音轨和生成代码用片内版本路径。改稿意回到文稿，改主动作回到分镜，只改读音或混音回到带声预演。交审工具清理本轮及下游的当前审批，保留历史决定。终审后以冻结的带声预演输入重渲。
 
 主会话负责作者沟通和记录。需要分段时，把项目目录、镜号、台词锚点、输入版本、前后镜状态、允许写入的位置交给制作角色。审片角色按同一版本返回时间、区域、症状和复查办法。角色配置可选，单会话也可完成这些阶段。
 

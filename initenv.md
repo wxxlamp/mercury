@@ -31,7 +31,7 @@ node --version
 npm --version
 ```
 
-预期 Node.js 输出为 `v22.22.1`。当前 [package.json](package.json) 只包含项目元数据和占位脚本。以后项目新增依赖时，有 `package-lock.json` 就用 `npm ci`，首次生成锁文件用 `npm install`。
+预期 Node.js 输出为 `v22.22.1`。当前的项目初始化命令仅依赖 Node.js 标准库，见 [README](README.md)。以后项目新增依赖时，有 `package-lock.json` 就用 `npm ci`，首次生成锁文件用 `npm install`。
 
 ## 在 VS Code 调试
 
@@ -46,4 +46,4 @@ npm --version
 
 ## 本地 Codex 定制
 
-`.agent`、`AGENTS.override.md`、`.codex/` 和 `.agents/` 都由 Git 忽略。写入 `~/.codex/config.toml` 的设置属于用户级，会跨项目生效。
+根目录的公共 Codex 配置、导演 skill、角色和提示词可随仓库分发。个人覆盖文件与其他本地配置由 Git 忽略。写入 `~/.codex/config.toml` 的设置属于用户级，会跨项目生效。
